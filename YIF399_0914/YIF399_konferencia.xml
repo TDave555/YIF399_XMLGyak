@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<konferencia id="konf_01">
+    <cim>Első konferencia</cim>
+    <helyszin>Arany utca 1.</helyszin>
+	<dátum>2022.09.20</dátum>
+	<előadó id="ea_01">
+		<név>Kovács Ákos</név>
+		<adószám>12345678</adószám>
+		<lakcím>1111 Budapest, Nevenincs utca 15.</lakcím>
+	</előadó>
+	<hallgatók>
+		<hallgató id="hall_01">
+			<név>Nagy Ottó</név>
+			<név>1111 Budapest Kis utca 5.</név>
+		</hallgató>
+		<hallgató id="hall_02">
+			<név>Kis Károly</név>
+			<név>1111 Budapest Nagy utca 10.</név>
+		</hallgató>
+	</hallgatók>
+</konferencia>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mozi>
+    <film id="txn_nxm_2jb" mufaj="horror">
+        <rendezo id="nzk_4xm_2jb" nev="Alex"/>
+        <szinesz>
+            <gyerekszinesz id="gyszid_01" nev="Jack"/>
+			<musicalszinesz id="mszid_01" nev="Pál"/>
+			<szinkronszinesz id="szszid_01" nev="Csongor"/>
+        </szinesz>
+        <iro id="trv_4xm_2jb"/>
+    </film>
+    <film id="txn_nxm_3jb" mufaj="sci-fi">
+		<producer id="prodid_01" nev="Cristopher"/>
+		<dramaturg id="drid_01" nev="William"/>
+		<operator id="opid_01" nev="István"/>
+	</film>
+</mozi>
