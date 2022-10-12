@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE toth_david_orarend SYSTEM "TDO_orarend.dtd">
+
+<toth_david_orarend>
+    <ora id="ora_01" tipus="elmelet">
+		<targy>WEB technológiák 1</targy>
+		<idopont>
+			<nap>Hétfő</nap>
+			<tol>08:00</tol>
+			<ig>10:00</ig>
+		</idopont>
+		<helyszin>XXX. ea.</helyszin>
+		<oktato>Agárdi Anita</oktato>
+		<szak>Mérnökinformatikus - Korszerű WEB technológiák spec.</szak>
+	</ora>
+    <ora id="ora_02" tipus="elmelet">
+		<targy>Korszerű információs technológiák</targy>
+		<idopont>
+			<nap>Hétfő</nap>
+			<tol>14:00</tol>
+			<ig>16:00</ig>
+		</idopont>
+		<helyszin>A1/320</helyszin>
+		<oktato>Dr. Árvai László</oktato>
+		<szak>Mérnökinformatikus</szak>
+	</ora>
+    <ora id="ora_03" tipus="elmelet">
+		<targy>Integrált vállalati rendszerek</targy>
+		<idopont>
+			<nap>Hétfő</nap>
+			<tol>16:00</tol>
+			<ig>18:00</ig>
+		</idopont>
+		<helyszin>A1/313</helyszin>
+		<oktato>Dr. Samad Dadvandipour</oktato>
+		<szak>Mérnökinformatikus</szak>
+	</ora>
+    <ora id="ora_04" tipus="gyakorlat">
+		<targy>WEB technológiák 1</targy>
+		<idopont>
+			<nap>Hétfő</nap>
+			<tol>18:00</tol>
+			<ig>20:00</ig>
+		</idopont>
+		<helyszin>Inf/103</helyszin>
+		<oktato>Agárdi Anita</oktato>
+		<szak>Mérnökinformatikus - Korszerű WEB technológiák spec.</szak>
+	</ora>
+	<ora id="ora_05" tipus="elmelet">
+        <targy>Adatkezelés XML környezetben</targy>
+		<idopont>
+			<nap>Kedd</nap>
+			<tol>12:00</tol>
+			<ig>14:00</ig>
+		</idopont>
+		<helyszin>XXXII. ea.</helyszin>
+		<oktato>Dr. Bednarik László</oktato>
+		<szak>Mérnökinformatikus - Korszerű WEB technológiák spec.</szak>
+	</ora>
+    <ora id="ora_06" tipus="elmelet">
+        <targy>Web-es alkalmazások (Java)</targy>
+		<idopont>
+			<nap>Szerda</nap>
+			<tol>08:00</tol>
+			<ig>10:00</ig>
+		</idopont>
+		<helyszin>Inf/103</helyszin>
+		<oktato>Dr. Barabás Péter</oktato>
+		<szak>Mérnökinformatikus - Korszerű WEB technológiák spec.</szak>
+	</ora>
+	<ora id="ora_07" tipus="gyakorlat">
+		<targy>Adatkezelés XML környezetben</targy>
+		<idopont>
+			<nap>Szerda</nap>
+			<tol>10:00</tol>
+			<ig>12:00</ig>
+		</idopont>
+		<helyszin>Inf/101</helyszin>
+		<oktato>Dr. Bednarik László</oktato>
+		<szak>Mérnökinformatikus - Korszerű WEB technológiák spec.</szak>
+	</ora>
+    <ora id="ora_08" tipus="gyakorlat">
+        <targy>Web-es alkalmazások (Java)</targy>
+		<idopont>
+			<nap>Szerda</nap>
+			<tol>13:00</tol>
+			<ig>15:00</ig>
+		</idopont>
+		<helyszin>Inf/202</helyszin>
+		<oktato>Dr. Barabás Péter</oktato>
+		<szak>Mérnökinformatikus - Korszerű WEB technológiák spec.</szak>
+	</ora>
+	<ora id="ora_09" tipus="gyakorlat">
+		<targy>Integrált vállalati rendszerek</targy>
+		<idopont>
+			<nap>Szerda</nap>
+			<tol>15:00</tol>
+			<ig>17:00</ig>
+		</idopont>
+		<helyszin>Infó/15</helyszin>
+		<oktato>Kulcsárné Dr. Forrai Mónika</oktato>
+		<szak>Mérnökinformatikus</szak>
+	</ora>
+</toth_david_orarend>

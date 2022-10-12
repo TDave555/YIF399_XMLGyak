@@ -1,0 +1,26 @@
+<!-- TDO_kurzusfelvetel.dtd - validation rules for TDO_kurzusfelvetel.xml
+    Tóth Dávid Olivér, 2022-10-01 
+--> 
+
+<!ATTLIST TDO_kurzusfelvetel tanev CDATA #REQUIRED>
+<!ATTLIST TDO_kurzusfelvetel egyetem CDATA #REQUIRED>
+<!ELEMENT TDO_kurzusfelvetel (hallgato, kurzusok)>
+
+<!ATTLIST hallgato id ID #REQUIRED>
+<!ELEMENT hallgato (hnev, szulev, szak)>
+<!ELEMENT hnev (#PCDATA)>
+<!ELEMENT szulev (#PCDATA)>
+<!ATTLIST szak evf CDATA #REQUIRED>
+<!ELEMENT szak (#PCDATA)>
+
+<!ELEMENT kurzusok (kurzus*)>
+<!ATTLIST kurzus id ID #REQUIRED>
+<!ATTLIST kurzus jovahagyas (igen | nem) "nem">
+<!ATTLIST kurzus nyelv CDATA "magyar">
+<!ELEMENT kurzus (kurzusnev, kredit, hely, idopont+, (oktato | oraado)?)>
+<!ELEMENT kurzusnev (#PCDATA)>
+<!ELEMENT kredit (#PCDATA)>
+<!ELEMENT hely (#PCDATA)>
+<!ELEMENT idopont (#PCDATA)>
+<!ELEMENT oktato (#PCDATA)>
+<!ELEMENT oraado (#PCDATA)>

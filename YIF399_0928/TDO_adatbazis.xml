@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE TDO_adatbazis SYSTEM "TDO_adatbazis.dtd">
+
+<TDO_adatbazis>
+    <DOLGOZO kod="id_001">
+        <nev>Kiss István</nev>
+        <fizetes>256000</fizetes>
+    </DOLGOZO>
+    <DOLGOZO kod="id_002">
+        <nev>Fekete László</nev>
+        <fizetes>1800000</fizetes>
+    </DOLGOZO>
+    <DOLGOZO kod="id_003">
+        <nev>Takács Olivér</nev>
+        <fizetes>700000</fizetes>
+    </DOLGOZO>
+</TDO_adatbazis>

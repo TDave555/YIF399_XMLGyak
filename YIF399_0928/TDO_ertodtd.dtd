@@ -1,0 +1,30 @@
+<!ATTLIST TDOmodell xmlns:a CDATA #REQUIRED
+  xmlns:b CDATA #REQUIRED
+  xmlns:c CDATA #REQUIRED
+  xmlns:a_b CDATA #REQUIRED>
+<!ELEMENT TDOmodell (A+, C+, B+, A_B+)>
+
+<!ELEMENT A (a:b+, a:c)>
+<!ATTLIST A a ID #REQUIRED>
+<!ELEMENT a:b (a:x, a:y)>
+<!ELEMENT a:x (#PCDATA)>
+<!ELEMENT a:y (#PCDATA)>
+<!ELEMENT a:c (a:d, a:e)>
+<!ELEMENT a:d (#PCDATA)>
+<!ELEMENT a:e (#PCDATA)>
+
+<!ELEMENT C (c:b)>
+<!ATTLIST C a ID #REQUIRED>
+<!ELEMENT c:b (#PCDATA)>
+
+<!ELEMENT B (b:b)>
+<!ATTLIST B a ID #REQUIRED
+  CREF IDREF #REQUIRED>
+<!ELEMENT b:b (b:x, b:y)>
+<!ELEMENT b:x (#PCDATA)>
+<!ELEMENT b:y (#PCDATA)>
+
+<!ELEMENT A_B (a_b:c)>
+<!ATTLIST A_B AREF IDREF #REQUIRED
+  BREF IDREF #REQUIRED>
+<!ELEMENT a_b:c (#PCDATA)>

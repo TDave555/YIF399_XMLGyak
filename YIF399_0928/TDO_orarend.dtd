@@ -1,0 +1,15 @@
+<!ELEMENT toth_david_orarend (ora*)>
+
+<!ATTLIST ora id ID #REQUIRED>
+<!ATTLIST ora tipus (elmelet | gyakorlat) #REQUIRED>
+<!ELEMENT ora (targy, idopont, helyszin, oktato, szak)>
+
+<!ELEMENT targy (#PCDATA)>
+<!ELEMENT idopont (nap, tol, ig)>
+<!ELEMENT helyszin (#PCDATA)>
+<!ELEMENT oktato (#PCDATA)>
+<!ELEMENT szak (#PCDATA)>
+
+<!ELEMENT nap (#PCDATA)>
+<!ELEMENT tol (#PCDATA)>
+<!ELEMENT ig (#PCDATA)>

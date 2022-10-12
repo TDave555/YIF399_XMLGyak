@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE TDOmodell SYSTEM "TDO_ertodtd.dtd">
+<TDOmodell xmlns:a="./namespaces/a.txt" xmlns:b="./namespaces/b.txt" 
+xmlns:c="./namespaces/c.txt" xmlns:a_b="./namespaces/a_b.txt">
+
+    <A a="a01">
+        <a:b>
+            <a:x>asd</a:x>
+            <a:y>asd</a:y>
+        </a:b>
+        <a:c>
+            <a:d>asd</a:d>
+            <a:e>asd</a:e>
+        </a:c>
+    </A>
+    <A a="a02">
+        <a:b>
+            <a:x>asd</a:x>
+            <a:y>asd</a:y>
+        </a:b>
+        <a:c>
+            <a:d>asd</a:d>
+            <a:e>asd</a:e>
+        </a:c>
+    </A>
+
+    <C a="c01">
+        <c:b>asd</c:b>
+    </C>
+
+    <B a="b01" CREF="c01">
+        <b:b>
+            <b:x>asd</b:x>
+            <b:y>asd</b:y>
+        </b:b>
+    </B>
+    <B a="b02" CREF="c01">
+        <b:b>
+            <b:x>asd</b:x>
+            <b:y>asd</b:y>
+        </b:b>
+    </B>
+
+    <A_B AREF="a01" BREF="b01">
+        <a_b:c>A1+B1</a_b:c>
+    </A_B>
+    <A_B AREF="a02" BREF="b02">
+        <a_b:c>A2+B2</a_b:c>
+    </A_B>
+    <A_B AREF="a01" BREF="b02">
+        <a_b:c>A1+B2</a_b:c>
+    </A_B>
+    <A_B AREF="a02" BREF="b01">
+        <a_b:c>A2+B1</a_b:c>
+    </A_B>
+
+</TDOmodell>
