@@ -31,10 +31,11 @@
 			<oktato>Dr. Árvai László</oktato>
 		</kurzus>
         <kurzus id="GEIAL331-B" jovahagyas="igen">
-			<kurzusnev>Korszerű információs technológiák</kurzusnev>
+			<kurzusnev>Web technológiák 1</kurzusnev>
 			<kredit>5</kredit>
 			<hely>XXX. ea.</hely>
 			<idopont>Hétfő 08:00-09:30</idopont>
+			<oktato>Agárdi Anita</oktato>
 		</kurzus>
 		<kurzus id="GEIAL333-B">
 			<kurzusnev>Web-es alkalmazások (Java)</kurzusnev>
