@@ -13,7 +13,7 @@
 			<kredit>5</kredit>
 			<hely>XXXII. ea.</hely>
 			<idopont>Kedd 12:00-13:30</idopont>
-            <idopont>Szerda 10:00-11:30</idopont>
+            		<idopont>Szerda 10:00-11:30</idopont>
 			<oktato>Dr. Bednarik László</oktato>
 		</kurzus>
 		<kurzus id="GEIAK120-B" nyelv="angol">
@@ -31,11 +31,11 @@
 			<oktato>Dr. Árvai László</oktato>
 		</kurzus>
         <kurzus id="GEIAL331-B" jovahagyas="igen">
-			<kurzusnev>Web technológiák 1</kurzusnev>
+			<kurzusnev>WEB technológiák 1</kurzusnev>
 			<kredit>5</kredit>
 			<hely>XXX. ea.</hely>
 			<idopont>Hétfő 08:00-09:30</idopont>
-			<oktato>Agárdi Anita</oktato>
+			<idopont>Hétfő 18:00-19:30</idopont>
 		</kurzus>
 		<kurzus id="GEIAL333-B">
 			<kurzusnev>Web-es alkalmazások (Java)</kurzusnev>
