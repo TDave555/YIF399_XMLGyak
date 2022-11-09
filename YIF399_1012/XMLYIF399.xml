@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<TDO_vendeglatas xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="XMLSchemaYIF399.xsd" >
+
+  <!-- éttermek -->
+
+    <etterem Ekod="e1">
+      <nev>Városi rántotthúsozó</nev>
+      <csillag>2</csillag>
+      <cim>
+          <varos>Miskolc</varos>
+            <utca>Széchenyi utca</utca>
+            <hazszam>8</hazszam>
+        </cim>
+    </etterem>
+
+    <etterem Ekod="e2">
+        <nev>Finom falatok falodája</nev>
+        <csillag>4</csillag>
+        <cim>
+            <varos>Kaposvár</varos>
+            <utca>Vár utca</utca>
+            <hazszam>35</hazszam>
+        </cim>
+    </etterem>
+
+    <etterem Ekod="e3">
+        <nev>Mariska néni házias konyhája</nev>
+        <csillag>5</csillag>
+        <cim>
+            <varos>Eger</varos>
+            <utca>Bornemissza utca</utca>
+            <hazszam>22</hazszam>
+        </cim>
+    </etterem>
+
+
+  <!-- főszakácsok -->
+
+    <foszakacs Fkod="f1" Eref="e1">
+        <nev>Álmos János</nev>
+        <eletkor>42</eletkor>
+        <vegzettseg>Masterclassegy By Gordon Ramsay</vegzettseg>
+    </foszakacs>
+  
+    <foszakacs Fkod="f2" Eref="e2">
+        <nev>Nagy Viktória</nev>
+        <eletkor>35</eletkor>
+        <vegzettseg>Gourmet szakács</vegzettseg>
+        <vegzettseg>Barista</vegzettseg>
+    </foszakacs>
+  
+    <foszakacs Fkod="f3" Eref="e3">
+        <nev>Németh Árpád</nev>
+        <eletkor>22</eletkor>
+        <vegzettseg>Gasztronómiai menedzser</vegzettseg>
+        <vegzettseg>Bar mixer</vegzettseg>
+        <vegzettseg>OKJ Cukrász</vegzettseg>
+    </foszakacs>
+    
+
+  <!-- szakácsok -->
+
+    <szakacs Szkod="sz1" Eref="e1">
+        <nev>Édes Anna</nev>
+        <reszleg>Sütemény</reszleg>
+        <vegzettseg>OKJ cukrász</vegzettseg>
+        <vegzettseg>OKJ szakács</vegzettseg>
+      </szakacs>
+
+      <szakacs Szkod="sz2" Eref="e2">
+        <nev>Tálas Elemér</nev>
+        <reszleg>Sütő</reszleg>
+        <vegzettseg>OKJ szakács</vegzettseg>
+      </szakacs>
+
+      <szakacs Szkod="sz3" Eref="e2">
+        <nev>Kiss László</nev>
+        <reszleg>Kóstoló</reszleg>
+        <vegzettseg>Szomelié</vegzettseg>
+        <vegzettseg>OKJ szakács</vegzettseg>
+      </szakacs>
+
+      <szakacs Szkod="sz4" Eref="e3">
+        <nev>Babos Fanni</nev>
+        <reszleg>Saláták</reszleg>
+        <vegzettseg>OKJ szakács</vegzettseg>
+      </szakacs>
+
+
+  <!-- gyakornokok -->
+
+    <gyakornok Gykod="gy1" Eref="e1">
+      <nev>Tibi</nev>
+      <gyakorlat>
+        <kezdete>2022-06-24</kezdete>
+        <idotartama>2 hónap</idotartama>
+      </gyakorlat>
+      <muszak>Délutáni</muszak>
+    </gyakornok>
+
+    <gyakornok Gykod="gy2" Eref="e2">
+      <nev>Feri</nev>
+      <gyakorlat>
+        <kezdete>2021-12-01</kezdete>
+        <idotartama>8 hónap</idotartama>
+      </gyakorlat>
+      <muszak>Esti</muszak>
+      <muszak>Délutáni</muszak>
+    </gyakornok>
+
+    <gyakornok Gykod="gy3" Eref="e3">
+      <nev>Laci</nev>
+      <gyakorlat>
+        <kezdete>2022-02-14</kezdete>
+        <idotartama>6 hónap</idotartama>
+      </gyakorlat>
+      <muszak>Délelötti</muszak>
+    </gyakornok>
+
+
+  <!-- vendégek -->
+
+    <vendeg Vkod="v1">
+      <nev>Maros Árpád</nev>
+      <eletkor>28</eletkor>
+      <cim>
+        <varos>Miskolc</varos>
+        <utca>Blaha Lujza utca</utca>
+        <hazszam>20</hazszam>
+      </cim>
+    </vendeg>
+  
+    <vendeg Vkod="v2">
+      <nev>Lantos Ibolya</nev>
+      <eletkor>33</eletkor>
+      <cim>
+        <varos>Kaposvár</varos>
+        <utca>Arany utca</utca>
+        <hazszam>99</hazszam>
+      </cim>
+    </vendeg>
+
+    <vendeg Vkod="v3">
+      <nev>Kovács István</nev>
+      <eletkor>60</eletkor>
+      <cim>
+        <varos>Eger</varos>
+        <utca>Hadak útja</utca>
+        <hazszam>5</hazszam>
+      </cim>
+    </vendeg>
+
+
+  <!-- rendelések -->
+
+    <rendeles Eref="e1" Vref="v1">
+      <osszeg>2600 Ft</osszeg>
+      <etel>"2 szelett óriás rántott karaj + 1 adag sültkrumpli"</etel>
+    </rendeles>
+  
+    <rendeles Eref="e2" Vref="v2">
+      <osszeg>1200 Ft</osszeg>
+      <etel>Csirkenuggets (12 db-os) + BBQ szósz + sültkrumpli</etel>
+    </rendeles>
+  
+    <rendeles Eref="e3" Vref="v3">
+      <osszeg>1500 Ft</osszeg>
+      <etel>Bajai halászlé + 2 szelet kenyér</etel>
+    </rendeles>
+
+
+</TDO_vendeglatas>

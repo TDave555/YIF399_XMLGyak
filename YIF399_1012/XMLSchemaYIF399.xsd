@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+
+  <!-- Egyszerű típusok, korlátozások -->
+
+  <xs:simpleType name="csillagType">
+    <xs:restriction base="xs:int">
+      <xs:enumeration value="1" />
+      <xs:enumeration value="2" />
+      <xs:enumeration value="3" />
+      <xs:enumeration value="4" />
+      <xs:enumeration value="5" />
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="eletkorType">
+    <xs:restriction base="xs:positiveInteger">
+      <xs:minInclusive value="14" />
+      <xs:maxInclusive value="100" />
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="osszegType">
+    <xs:restriction base="xs:string">
+        <xs:pattern value="\d{3,5} Ft"></xs:pattern>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <!-- Egyszerű egyedek -->
+
+  <xs:element name="csillag" type="csillagType" />
+  <xs:element name="varos" type="xs:string" />
+  <xs:element name="utca" type="xs:string" />
+  <xs:element name="hazszam" type="xs:string" />
+  <xs:element name="nev" type="xs:string" />
+  <xs:element name="eletkor" type="eletkorType" />
+  <xs:element name="reszleg" type="xs:string" />
+  <xs:element name="vegzettseg" type="xs:string" />
+  <xs:element name="osszeg" type="osszegType" />
+  <xs:element name="etel" type="xs:string" />
+  <xs:element name="kezdete" type="xs:string" />
+  <xs:element name="idotartama" type="xs:string" />
+  <xs:element name="muszak" type="xs:string" />
+
+  <!-- Attributumok -->
+
+  <xs:attribute name="Ekod" type="xs:string" />
+  <xs:attribute name="Fkod" type="xs:string" />
+  <xs:attribute name="Gykod" type="xs:string" />
+  <xs:attribute name="Szkod" type="xs:string" />
+  <xs:attribute name="Vkod" type="xs:string" />
+
+  <xs:attribute name="Eref" type="xs:string" />
+  <xs:attribute name="Vref" type="xs:string" />
+
+  <!-- Komplex egyedek -->
+
+  <xs:element name="cim">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="varos" />
+        <xs:element ref="utca" />
+        <xs:element ref="hazszam" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="gyakorlat">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="kezdete" />
+        <xs:element ref="idotartama" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  
+  <xs:element name="etterem">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="nev" minOccurs="1" maxOccurs="1" />
+        <xs:element ref="csillag" minOccurs="1" maxOccurs="1" />
+        <xs:element ref="cim" />
+      </xs:sequence>
+      <xs:attribute ref="Ekod" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  
+  <xs:element name="foszakacs">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="nev" minOccurs="1" maxOccurs="1" />
+        <xs:element ref="eletkor" />
+        <xs:element ref="vegzettseg" maxOccurs="unbounded" />
+      </xs:sequence>
+      <xs:attribute ref="Fkod" use="required" />
+      <xs:attribute ref="Eref" />
+    </xs:complexType>
+  </xs:element>
+  
+  <xs:element name="szakacs">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="nev" minOccurs="1" maxOccurs="1" />
+        <xs:element ref="reszleg" />
+        <xs:element ref="vegzettseg" maxOccurs="unbounded" />
+      </xs:sequence>
+      <xs:attribute ref="Szkod" use="required" />
+      <xs:attribute ref="Eref" />
+    </xs:complexType>
+  </xs:element>
+  
+  <xs:element name="gyakornok">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="nev" minOccurs="1" maxOccurs="1" />
+        <xs:element ref="gyakorlat" />
+        <xs:element ref="muszak" maxOccurs="unbounded" />
+      </xs:sequence>
+      <xs:attribute ref="Gykod" use="required" />
+      <xs:attribute ref="Eref" />
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="vendeg">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="nev" minOccurs="1" maxOccurs="1" />
+        <xs:element ref="eletkor" />
+        <xs:element ref="cim" />
+      </xs:sequence>
+      <xs:attribute ref="Vkod" use="required" />
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="rendeles">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="osszeg" />
+        <xs:element ref="etel" />
+      </xs:sequence>
+      <xs:attribute ref="Eref" />
+      <xs:attribute ref="Vref" />
+    </xs:complexType>
+  </xs:element>
+
+  <!-- Gyökér elem -->
+
+  <xs:element name="TDO_vendeglatas">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="etterem" maxOccurs="unbounded" />
+        <xs:element ref="foszakacs" maxOccurs="unbounded" />
+        <xs:element ref="szakacs" maxOccurs="unbounded" />
+        <xs:element ref="gyakornok" maxOccurs="unbounded" />
+        <xs:element ref="vendeg" maxOccurs="unbounded" />
+        <xs:element ref="rendeles" maxOccurs="unbounded" />
+      </xs:sequence>
+    </xs:complexType>
+    
+    <!-- xPath -->
+
+    <xs:key name="etteremKey">
+      <xs:selector xpath="etterem" />
+      <xs:field xpath="@Ekod" />
+    </xs:key>
+    <xs:key name="foszakacsKey">
+      <xs:selector xpath="foszakacs" />
+      <xs:field xpath="@Fkod" />
+    </xs:key>
+    <xs:key name="szakacsKey">
+      <xs:selector xpath="szakacs" />
+      <xs:field xpath="@Szkod" />
+    </xs:key>
+    <xs:key name="gyakornokKey">
+      <xs:selector xpath="gyakornok" />
+      <xs:field xpath="@Gykod" />
+    </xs:key>
+    <xs:key name="vendegKey">
+      <xs:selector xpath="vendeg" />
+      <xs:field xpath="@Vkod" />
+    </xs:key>
+
+    <xs:keyref refer="etteremKey" name="RendelesEtteremForeignKey">
+      <xs:selector xpath="rendeles" />
+      <xs:field xpath="@Eref" />
+    </xs:keyref>
+    <xs:keyref refer="vendegKey" name="RendelesVendegForeignKey">
+      <xs:selector xpath="rendeles" />
+      <xs:field xpath="@Vref" />
+    </xs:keyref>
+    <xs:keyref refer="etteremKey" name="FoszakacsEtteremForeignKey">
+      <xs:selector xpath="foszakacs" />
+      <xs:field xpath="@Eref" />
+    </xs:keyref>
+    <xs:keyref refer="etteremKey" name="SzakacsEtteremForeignKey">
+      <xs:selector xpath="szakacs" />
+      <xs:field xpath="@Eref" />
+    </xs:keyref>
+    <xs:keyref refer="etteremKey" name="GyakornokEtteremForeignKey">
+      <xs:selector xpath="gyakornok" />
+      <xs:field xpath="@Eref" />
+    </xs:keyref>
+  </xs:element>
+  
+</xs:schema>
