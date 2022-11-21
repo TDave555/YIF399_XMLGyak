@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<users xmlns="DOMYIF399">
+  <user id="1">
+    <Firstname>Pal</Firstname>
+    <Lastname>Kiss</Lastname>
+    <Profession>Web Developer</Profession>
+  </user>
+  <user id="2">
+    <Firstname>Piroska</Firstname>
+    <Lastname>Zold</Lastname>
+    <Profession>Java programozo</Profession>
+  </user>
+  <user id="3">
+    <Firstname>Ferenc</Firstname>
+    <Lastname>Nagy</Lastname>
+    <Profession>Manager</Profession>
+  </user>
+</users>
