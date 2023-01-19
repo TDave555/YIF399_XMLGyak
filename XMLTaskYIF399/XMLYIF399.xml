@@ -73,11 +73,34 @@
 			</szekhely>
 		</studio>
 	</studiok>
+	<forgatokonyvek>
+		<forgatokonyv FkID="fk01">
+			<oldalszam>251</oldalszam>
+			<formatum>nyomtatott</formatum>
+			<peldanyszam>10000</peldanyszam>
+		</forgatokonyv>
+		<forgatokonyv FkID="fk02">
+			<oldalszam>223</oldalszam>
+			<formatum>nyomtatott</formatum>
+			<peldanyszam>12000</peldanyszam>
+		</forgatokonyv>
+		<forgatokonyv FkID="fk03">
+			<oldalszam>217</oldalszam>
+			<formatum>nyomtatott</formatum>
+			<peldanyszam>5000</peldanyszam>
+		</forgatokonyv>
+		<forgatokonyv FkID="fk04">
+			<oldalszam>146</oldalszam>
+			<formatum>digitális</formatum>
+			<peldanyszam>1</peldanyszam>
+		</forgatokonyv>
+	</forgatokonyvek>
 	<filmek>
 		<film FID="f01">
 			<cim>Csupasz pisztoly</cim>
 			<bevetel>78756177</bevetel>
 			<hossz>85</hossz>
+			<mufaj>akció/vígjáték</mufaj>
 			<megjelenes>
 				<ev>1988</ev>
 				<honap>12</honap>
@@ -85,11 +108,13 @@
 			</megjelenes>
 			<RID refID="r01"/>
 			<SID refID="s01"/>
+			<FkID refID="fk01"/>
 		</film>
 		<film FID="f02">
-			<cim>Csupasz pisztoly 2</cim>
+			<cim>Csupasz pisztoly 2 és 1/2</cim>
 			<bevetel>192000000</bevetel>
 			<hossz>81</hossz>
+			<mufaj>akció/vígjáték</mufaj>
 			<megjelenes>
 				<ev>1991</ev>
 				<honap>6</honap>
@@ -97,11 +122,13 @@
 			</megjelenes>
 			<RID refID="r01"/>
 			<SID refID="s01"/>
+			<FkID refID="fk02"/>
 		</film>
 		<film FID="f03">
-			<cim>Csupasz pisztoly 3 – Az utolsó merénylet</cim>
+			<cim>Csupasz pisztoly 33 1/3 – Az utolsó merénylet</cim>
 			<bevetel>51132598</bevetel>
 			<hossz>81</hossz>
+			<mufaj>akció/vígjáték</mufaj>
 			<megjelenes>
 				<ev>1994</ev>
 				<honap>3</honap>
@@ -109,11 +136,13 @@
 			</megjelenes>
 			<RID refID="r02"/>
 			<SID refID="s01"/>
+			<FkID refID="fk03"/>
 		</film>
 		<film FID="f04">
 			<cim>Horrorra akadva 2</cim>
 			<bevetel>71308997</bevetel>
 			<hossz>83</hossz>
+			<mufaj>horror/vígjáték</mufaj>
 			<megjelenes>
 				<ev>2001</ev>
 				<honap>7</honap>
@@ -121,6 +150,7 @@
 			</megjelenes>
 			<RID refID="r03"/>
 			<SID refID="s02"/>
+			<FkID refID="fk04"/>
 		</film>
 	</filmek>
 	<szereplesek>
