@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?xml-stylesheet type="text/xsl" href="orarendYIF399.xsl" version="1.0"?>
+
+<toth_david_orarend>
+	<ora id="ora_01" tipus="elmelet">
+		<targy>WEB technologiak 1</targy>
+		<idopont>
+			<nap>Hetfo</nap>
+			<tol>08:00</tol>
+			<ig>10:00</ig>
+		</idopont>
+		<helyszin>XXX. ea.</helyszin>
+		<oktato>Agardi Anita</oktato>
+		<szak>Mernokinformatikus - Korszeru WEB technologiak spec.</szak>
+	</ora>
+	<ora id="ora_02" tipus="elmelet">
+		<targy>Korszeru informacios technologiak</targy>
+		<idopont>
+			<nap>Hetfo</nap>
+			<tol>14:00</tol>
+			<ig>16:00</ig>
+		</idopont>
+		<helyszin>A1/320</helyszin>
+		<oktato>Dr. Arvai Laszlo</oktato>
+		<szak>Mernokinformatikus</szak>
+	</ora>
+	<ora id="ora_03" tipus="elmelet">
+		<targy>Integralt vallalati rendszerek</targy>
+		<idopont>
+			<nap>Hetfo</nap>
+			<tol>16:00</tol>
+			<ig>18:00</ig>
+		</idopont>
+		<helyszin>A1/313</helyszin>
+		<oktato>Dr. Samad Dadvandipour</oktato>
+		<szak>Mernokinformatikus</szak>
+	</ora>
+	<ora id="ora_04" tipus="gyakorlat">
+		<targy>WEB technologiak 1</targy>
+		<idopont>
+			<nap>Hetfo</nap>
+			<tol>18:00</tol>
+			<ig>20:00</ig>
+		</idopont>
+		<helyszin>Inf/103</helyszin>
+		<oktato>Agardi Anita</oktato>
+		<szak>Mernokinformatikus - Korszeru WEB technologiak spec.</szak>
+	</ora>
+	<ora id="ora_05" tipus="elmelet">
+		<targy>Adatkezeles XML kornyezetben</targy>
+		<idopont>
+			<nap>Kedd</nap>
+			<tol>12:00</tol>
+			<ig>14:00</ig>
+		</idopont>
+		<helyszin>XXXII. ea.</helyszin>
+		<oktato>Dr. Bednarik Laszlo</oktato>
+		<szak>Mernokinformatikus - Korszeru WEB technologiak spec.</szak>
+	</ora>
+	<ora id="ora_06" tipus="elmelet">
+		<targy>Web-es alkalmazasok (Java)</targy>
+		<idopont>
+			<nap>Szerda</nap>
+			<tol>08:00</tol>
+			<ig>10:00</ig>
+		</idopont>
+		<helyszin>Inf/103</helyszin>
+		<oktato>Dr. Barabas Peter</oktato>
+		<szak>Mernokinformatikus - Korszeru WEB technologiak spec.</szak>
+	</ora>
+	<ora id="ora_07" tipus="gyakorlat">
+		<targy>Adatkezeles XML kornyezetben</targy>
+		<idopont>
+			<nap>Szerda</nap>
+			<tol>10:00</tol>
+			<ig>12:00</ig>
+		</idopont>
+		<helyszin>Inf/101</helyszin>
+		<oktato>Dr. Bednarik Laszlo</oktato>
+		<szak>Mernokinformatikus - Korszeru WEB technologiak spec.</szak>
+	</ora>
+	<ora id="ora_08" tipus="gyakorlat">
+		<targy>Web-es alkalmazasok (Java)</targy>
+		<idopont>
+			<nap>Szerda</nap>
+			<tol>13:00</tol>
+			<ig>15:00</ig>
+		</idopont>
+		<helyszin>Inf/202</helyszin>
+		<oktato>Dr. Barabas Peter</oktato>
+		<szak>Mernokinformatikus - Korszeru WEB technologiak spec.</szak>
+	</ora>
+	<ora id="ora_09" tipus="gyakorlat">
+		<targy>Integralt vallalati rendszerek</targy>
+		<idopont>
+			<nap>Szerda</nap>
+			<tol>15:00</tol>
+			<ig>17:00</ig>
+		</idopont>
+		<helyszin>Inf/15</helyszin>
+		<oktato>Kulcsarne Dr. Forrai Monika</oktato>
+		<szak>Mernokinformatikus</szak>
+	</ora>
+</toth_david_orarend>

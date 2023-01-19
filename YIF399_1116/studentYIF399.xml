@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?xml-stylesheet type="text/xsl" href="studentYIF399.xsl"?>
+
+<class>
+	<student id = "01">
+        <vezeteknev>Toth</vezeteknev>
+		<keresztnev>David</keresztnev>
+		<becenev>Toto</becenev>
+		<kor>23</kor>
+        <osztondij>100000</osztondij>
+	</student>
+
+	<student id="02">
+		<vezeteknev>Geczi</vezeteknev>
+		<keresztnev>Gabor</keresztnev>
+		<becenev>Gabi</becenev>
+		<kor>19</kor>
+        <osztondij>90000</osztondij>
+	</student>
+
+	<student id="03">
+        <vezeteknev>Benyi</vezeteknev>
+		<keresztnev>Tibor</keresztnev>
+		<becenev>Tibi</becenev>
+		<kor>25</kor>
+        <osztondij>150000</osztondij>
+	</student>
+</class>
