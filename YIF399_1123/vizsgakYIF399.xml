@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="./kurzusokYIF399.xsl"?>
+
+<vizsgakYIF399 _id="YIF399" name="vizsgak">
+    <vizsga_objektum>
+        <vizsga>
+            <kurzus>Integrált vállalati rendszerek</kurzus>
+            <helyszin>A1/313</helyszin>
+            <idopont>
+                <nap>Hétfő</nap>
+                <tol>14:00</tol>
+                <ig>15:00</ig>
+            </idopont>
+            <oktato>Dr. Samad Dadvandipour</oktato>
+            <jegy>5</jegy>
+        </vizsga>
+        <vizsga>
+            <kurzus>WEB technológiák 1</kurzus>
+            <helyszin>Inf/103</helyszin>
+            <idopont>
+                <nap>Kedd</nap>
+                <tol>13:00</tol>
+                <ig>14:00</ig>
+            </idopont>
+            <oktato>Agárdi Anita</oktato>
+            <jegy>5</jegy>
+        </vizsga>
+        <vizsga>
+            <kurzus>Korszerű információs technológiák</kurzus>
+            <helyszin>Inf/102</helyszin>
+            <idopont>
+                <nap>Szerda</nap>
+                <tol>8:00</tol>
+                <ig>10:00</ig>
+            </idopont>
+            <oktato>Dr. Árvai László</oktato>
+            <jegy>3</jegy>
+        </vizsga>
+        <vizsga>
+            <kurzus>Web-es alkalmazások (Java)</kurzus>
+            <helyszin>Inf/101</helyszin>
+            <idopont>
+                <nap>Szerda</nap>
+                <tol>13:00</tol>
+                <ig>15:00</ig>
+            </idopont>
+            <oktato>Dr. Barabás Péter</oktato>
+            <jegy>2</jegy>
+        </vizsga>
+    </vizsga_objektum>
+</vizsgakYIF399>
